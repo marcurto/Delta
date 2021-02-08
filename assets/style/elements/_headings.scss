@@ -13,7 +13,8 @@ h6 {
 }
 
 h1{
-  // font-size: variables.$_fs-129
+  font-size: variables.$title;
+  font-weight: 400;
 }
 
 h2{
@@ -22,4 +23,9 @@ h2{
 
 h3{
   // font-size: variables.$_fs-50
+}
+
+h4{
+  font-size: variables.$subtitle;
+  font-weight: 500;
 }

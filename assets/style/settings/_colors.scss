@@ -11,7 +11,10 @@ $_dark-brown: #30291F;
 
 $_black: #2F2A25;
 $_white: #fff;
+
 $_white-overally: rgba(255,255,255, 0.6);
+$_blue-overally: rgba(176, 203, 235, 0.4);
+$_green-overally: rgba(171, 221, 197, 0.31);
 
 
 // Blue
@@ -29,6 +32,8 @@ $title-brown: $_dark-brown;
 
 // Overally
 $white-overally: $_white-overally;
+$blue-overally: $_blue-overally;
+$green-overally: $_green-overally;
 
 // General
 $black: $_black;

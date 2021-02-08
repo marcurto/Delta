@@ -49,8 +49,11 @@ export default {
 .nav {
   @include mixins.space-between;
   width: 100%;
-  padding: 1rem 2rem;
   background-color: transparent;
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  z-index: 9;
 
   &__menu {
     @include mixins.space-between;
@@ -58,7 +61,7 @@ export default {
     p{
       margin-left: 1rem;
     }
-    a {
+    i {
       cursor: pointer;
     }
   }
