@@ -1,18 +1,37 @@
 // Blue
-$title-blue: #2A343C;
-$background-blue: #F5FAFE;
-$background-blue-dark: #9EC3E0;
+$_dark-blue: #2A343C;
+$_soft-blue: #F5FAFE;
+$_blue: #9EC3E0;
+
+$_dark-green: #1F271F;
+$_soft-green: #EFF9E9;
+$_green: #9EC3E0;
+
+$_dark-brown: #30291F;
+
+$_black: #2F2A25;
+$_white: #fff;
+$_white-overally: rgba(255,255,255, 0.6);
+
+
+// Blue
+$title-blue: $_dark-blue;
+$background-blue: $_soft-blue;
+$background-blue-dark: $_blue;
 
 // Green
-$title-green: #1F271F;
-$background-green: #EFF9E9;
-// $_background-green-dark: #9EC3E0;
+$title-green: $_dark-green;
+$background-green: $_soft-green;
+// $_background-green-dark: $_green;
 
 // Brown
-$title-brown: #30291F;
+$title-brown: $_dark-brown;
+
+// Overally
+$white-overally: $_white-overally;
 
 // General
-$black: #2F2A25;
-$white: white;
+$black: $_black;
+$white: $_white;
 
 
