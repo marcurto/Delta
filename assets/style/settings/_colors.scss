@@ -2,6 +2,7 @@
 $_dark-blue: #2A343C;
 $_soft-blue: #F5FAFE;
 $_blue: #9EC3E0;
+$_logo: #1186DA;
 
 $_dark-green: #1F271F;
 $_soft-green: #EFF9E9;
@@ -12,7 +13,7 @@ $_dark-brown: #252019;
 $_black: #2F2A25;
 $_white: #fff;
 
-$_white-overally: rgba(255,255,255, 0.6);
+$_white-overally: rgba(255,255,255, 0.9);
 $_blue-overally: rgba(176, 203, 235, 0.4);
 $_green-overally: rgba(171, 221, 197, 0.31);
 $_brown-overally: rgba(225, 215, 198, 0.29);
@@ -40,5 +41,6 @@ $brown-overally: $_brown-overally;
 // General
 $black: $_black;
 $white: $_white;
+$logo: $_logo;
 
 
