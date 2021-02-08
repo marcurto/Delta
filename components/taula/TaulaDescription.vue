@@ -15,7 +15,7 @@
         per definir la pròpia entitat i els seus objectius. En data 17 de juliol
         de 2018 acorden sotmetre als seus plenaris i assemblees generals
         corresponents el Document de Consens i Territori. per tal que se li doni
-        recolzament i es ratifiqui
+        recolzament i es ratifiqui.
       </p>
       <p>
         Entre els mesos de maig i juny de 2018 es va efectuar una ronda de
@@ -23,7 +23,7 @@
         per definir la pròpia entitat i els seus objectius. En data 17 de juliol
         de 2018 acorden sotmetre als seus plenaris i assemblees generals
         corresponents el Document de Consens i Territori. per tal que se li doni
-        recolzament i es ratifiqui
+        recolzament i es ratifiqui.
       </p>
       <p>
         La Taula de consens és una entitat del Delta de l’Ebre que té com a

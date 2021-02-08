@@ -2,10 +2,12 @@
   <section>
     <CoverBackground>
       <Overally>
-        <Cover/>
+        <Cover />
       </Overally>
     </CoverBackground>
-    <TaulaDescription/>
+    <TaulaDescription />
+    <TaulaEstrategiesBanner />
+    <TaulaEstrategies />
   </section>
 </template>
 
@@ -13,7 +15,9 @@
 import CoverBackground from "@/components/ui/atoms/CoverBackground.vue";
 import Cover from "@/components/ui/molecules/Cover.vue";
 import Overally from "@/components/ui/atoms/Overally.vue";
-import TaulaDescription from "@/components/text/TaulaDescription.vue";
+import TaulaDescription from "@/components/taula/TaulaDescription.vue";
+import TaulaEstrategiesBanner from "@/components/taula/TaulaEstrategiesBanner.vue";
+import TaulaEstrategies from "@/components/taula/TaulaEstrategies.vue";
 
 export default {
   layout: "default",
@@ -21,7 +25,9 @@ export default {
     CoverBackground,
     Cover,
     Overally,
-    TaulaDescription
+    TaulaDescription,
+    TaulaEstrategiesBanner,
+    TaulaEstrategies
   },
 };
 </script>
@@ -33,6 +39,6 @@ export default {
 
 section {
   height: 100%;
-    color: variables.$title-blue;
+  color: variables.$title-blue;
 }
 </style>

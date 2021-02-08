@@ -1,0 +1,42 @@
+<template>
+  <div class="banner-text">
+      <h2>{{ title }}</h2>
+      <p>{{ subtitle }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      default: "LES ESTRATÈGIES FONAMENTALS",
+    },
+    subtitle: {
+      type: String,
+      default: "Com a conclusions de concens existent en cadascun dels aspectes tractats, podriem assenyalar els més importants i que haurien d’estar inclosos com a estratègies fonalmentsl de qualsevol Pla Integral de Protecció del Delta.",
+    },
+    theme: {
+      type: String,
+      default: null,
+      validator(value) {
+        const themes = ["pla"];
+        return themes.includes(value);
+      },
+    },
+  },
+};
+</script>
+<style lang="scss" scoped>
+@use "@/assets/style/settings/_variables.scss";
+@use "@/assets/style/tools/_mixins.scss";
+@use "@/assets/style/index.scss";
+
+.banner-text{
+  padding: 5rem 7rem;
+
+  p{
+    margin-top: 0rem;
+  }
+}
+</style>

@@ -1,5 +1,5 @@
 @mixin justify {
   display: flex;
-  align-items: $vertical-align;
-  justify-content: $horizontal-align;
+  align-items: center;
+  justify-content: center;
 }

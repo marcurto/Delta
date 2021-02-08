@@ -50,11 +50,13 @@ export default {
   @include mixins.space-between;
   width: 100%;
   height: 60px;
+  color: variables.$white;
   background-color: transparent;
   position: absolute;
   top: 0;
   padding: 1rem;
   z-index: 9;
+  font-size: variables.$text-xs;
 
   &__menu {
     @include mixins.space-between;

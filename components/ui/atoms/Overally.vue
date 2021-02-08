@@ -15,7 +15,7 @@ export default {
       type: String,
       default: null,
       validator(value) {
-        const themes = ["pla", "delta"];
+        const themes = ["pla", "delta", "banner"];
         return themes.includes(value);
       },
     },
@@ -38,6 +38,12 @@ export default {
 
   &--delta{
     background-color: variables.$brown-overally;
+  }
+
+  &--banner{
+    background-color: rgba(52, 56, 65, 0.78);
+    height: 100%;
+    width: 100%;
   }
 }
 </style>
