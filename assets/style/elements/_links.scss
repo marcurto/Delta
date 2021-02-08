@@ -1,14 +1,13 @@
 @use "../settings/variables";
 
 a {
-  color: variables.$primary-color;
   text-decoration: none;
   cursor: pointer;
 
   &:hover,
   &:focus,
   &:active {
-    color: variables.$text-muted-color;
+    letter-spacing: 0.8px;
   }
 
 }
