@@ -1,8 +1,11 @@
-$font-family: 'Roboto', sans-serif;
-$font-family-titles: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$font-family-titles: 'Oswald', sans-serif;
+$font-family: 'Roboto Condensed', sans-serif;
+$font-damily-alternative: 'Roboto', sans-serif;
 
 // Typography scale
-$fs-base: 16;
+$fs-base: 18;
 
 $_fs-12: 12 / $fs-base + rem;
 $_fs-14: 14 / $fs-base + rem;
@@ -15,23 +18,4 @@ $_fs-30: 30 / $fs-base + rem;
 
 
 // Typography applications
-$fs-table-header: $_fs-12;
-$fs-body: $_fs-14;
-$fs-lists: $_fs-16;
-$fs-user: $_fs-16;
-$fs-title-s: $_fs-20;
-$fs-title-m: $_fs-26;
-$fs-title-l: $_fs-30;
 
-$fs-smaller-text: $_fs-12;
-$fs-bigger-text: $_fs-16;
-
-
-
-
-// $fs-pill: $_fs-9;
-// $fs-btn: $_fs-12;
-// $fs-footer: $_fs-12;
-// $fs-menu: $_fs-14;
-// $fs-lead: $_fs-19;
-// $fs-title-l: $_fs-44;
