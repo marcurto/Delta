@@ -47,7 +47,7 @@ export default {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 6rem 2rem;
+  padding: 3rem 2rem 5rem;
   text-align: center;
 
   &__column {

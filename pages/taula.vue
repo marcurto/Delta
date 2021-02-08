@@ -8,6 +8,7 @@
     <TaulaDescription />
     <TaulaEstrategiesBanner />
     <TaulaEstrategies />
+    <TaulaNeixement />
   </section>
 </template>
 
@@ -18,6 +19,7 @@ import Overally from "@/components/ui/atoms/Overally.vue";
 import TaulaDescription from "@/components/taula/TaulaDescription.vue";
 import TaulaEstrategiesBanner from "@/components/taula/TaulaEstrategiesBanner.vue";
 import TaulaEstrategies from "@/components/taula/TaulaEstrategies.vue";
+import TaulaNeixement from "@/components/taula/TaulaNeixement.vue";
 
 export default {
   layout: "default",
@@ -27,7 +29,8 @@ export default {
     Overally,
     TaulaDescription,
     TaulaEstrategiesBanner,
-    TaulaEstrategies
+    TaulaEstrategies,
+    TaulaNeixement
   },
 };
 </script>
