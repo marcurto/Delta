@@ -1,5 +1,33 @@
 <template>
-  <section class="taula-estrategies"></section>
+  <section class="taula-estrategies">
+    <div class="taula-estrategies__column">
+      <div class="taula-estrategies__image">
+        <img src="~static/img/morfologia.png" />
+      </div>
+      <div class="taula-estrategies__text">
+        <h4>MORFOLOGIA</h4>
+        <p>Caldria mantenir la morfologia del Delta de l’Ebre tant com sigui possible. No és acceptable el retrocés com a actuació aïllada que no vagi més enllà.</p>
+      </div>
+    </div>
+    <div class="taula-estrategies__column">
+      <div class="taula-estrategies__image">
+        <img src="~static/img/sediments.png" />
+      </div>
+      <div class="taula-estrategies__text">
+        <h4>RESTABLIMENT SEDIMENTS</h4>
+        <p>Es veu com a solució estructural, és a dir, aquella que si no es duu a terme, difícilment donarà valor en el temps a les altres possibles mesures. Es constata que els seus efectes es preveuen a mitjà i llarg termini.</p>
+      </div>
+    </div>
+    <div class="taula-estrategies__column">
+      <div class="taula-estrategies__image">
+        <img src="~static/img/altres.png" />
+      </div>
+      <div class="taula-estrategies__text">
+        <h4>ALTRES MESURES</h4>
+        <p>S’entenen com a mesures urgents a efectuar a curt termini. Es constata l’acceptació de la seva diversificació, és a dir, aplicar diferents actuacions segons la tipologia de zona a protegiri segons la gravetat de la situació.</p>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -15,5 +43,23 @@ export default {
 @use "@/assets/style/index.scss";
 
 .taula-estrategies {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 6rem 2rem;
+  text-align: center;
+
+  &__column {
+    width: 18rem;
+  }
+
+  &__image{
+    padding-bottom: 2rem;
+    img{
+      height: 13rem;
+      width: auto;
+    }
+  }
 }
 </style>
