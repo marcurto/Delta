@@ -1,0 +1,37 @@
+$font-family: 'Roboto', sans-serif;
+$font-family-titles: 'Montserrat', sans-serif;
+
+// Typography scale
+$fs-base: 16;
+
+$_fs-12: 12 / $fs-base + rem;
+$_fs-14: 14 / $fs-base + rem;
+$_fs-16: 16 / $fs-base + rem;
+$_fs-18: 18 / $fs-base + rem;
+$_fs-20: 20 / $fs-base + rem;
+$_fs-26: 26 / $fs-base + rem;
+$_fs-30: 30 / $fs-base + rem;
+
+
+
+// Typography applications
+$fs-table-header: $_fs-12;
+$fs-body: $_fs-14;
+$fs-lists: $_fs-16;
+$fs-user: $_fs-16;
+$fs-title-s: $_fs-20;
+$fs-title-m: $_fs-26;
+$fs-title-l: $_fs-30;
+
+$fs-smaller-text: $_fs-12;
+$fs-bigger-text: $_fs-16;
+
+
+
+
+// $fs-pill: $_fs-9;
+// $fs-btn: $_fs-12;
+// $fs-footer: $_fs-12;
+// $fs-menu: $_fs-14;
+// $fs-lead: $_fs-19;
+// $fs-title-l: $_fs-44;
