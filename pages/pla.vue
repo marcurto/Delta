@@ -5,6 +5,7 @@
         <Cover title="EL PLA DELTA" theme="pla"/>
       </Overally>
     </CoverBackground>
+    
   </section>
 </template>
 

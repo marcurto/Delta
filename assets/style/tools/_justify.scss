@@ -1,4 +1,4 @@
-@mixin justify($vertical-align, $horizontal-align) {
+@mixin justify {
   display: flex;
   align-items: $vertical-align;
   justify-content: $horizontal-align;

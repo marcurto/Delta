@@ -56,6 +56,10 @@ export default {
     color: variables.$title-green;
   }
 
+  &--delta{
+    color: variables.$title-brown;
+  }
+
   h1 {
     padding: 0rem;
   }

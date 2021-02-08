@@ -15,7 +15,7 @@ export default {
       type: String,
       default: null,
       validator(value) {
-        const themes = ["pla"];
+        const themes = ["pla", "delta"];
         return themes.includes(value);
       },
     },
@@ -34,6 +34,10 @@ export default {
 
   &--pla {
     background-color: variables.$green-overally;
+  }
+
+  &--delta{
+    background-color: variables.$brown-overally;
   }
 }
 </style>

@@ -49,6 +49,7 @@ export default {
 .nav {
   @include mixins.space-between;
   width: 100%;
+  height: 60px;
   background-color: transparent;
   position: absolute;
   top: 0;

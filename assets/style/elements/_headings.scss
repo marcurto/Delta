@@ -8,7 +8,8 @@ h3 {
 
 h4,
 h5,
-h6 {
+h6,
+p {
   font-family: variables.$font-family;
 }
 
@@ -22,10 +23,18 @@ h2{
 }
 
 h3{
-  // font-size: variables.$_fs-50
+  font-size: variables.$title-s;
+  font-weight: 400;
 }
 
 h4{
   font-size: variables.$subtitle;
   font-weight: 500;
+}
+
+p{
+  font-size: variables.$text;
+  font-weight: 300;
+  margin: 1.5rem 0rem;
+  line-height: 1.6rem;
 }

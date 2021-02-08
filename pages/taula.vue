@@ -5,6 +5,7 @@
         <Cover/>
       </Overally>
     </CoverBackground>
+    <TaulaDescription/>
   </section>
 </template>
 
@@ -12,13 +13,15 @@
 import CoverBackground from "@/components/ui/atoms/CoverBackground.vue";
 import Cover from "@/components/ui/molecules/Cover.vue";
 import Overally from "@/components/ui/atoms/Overally.vue";
+import TaulaDescription from "@/components/text/TaulaDescription.vue";
 
 export default {
   layout: "default",
   components: {
     CoverBackground,
     Cover,
-    Overally
+    Overally,
+    TaulaDescription
   },
 };
 </script>
@@ -30,5 +33,6 @@ export default {
 
 section {
   height: 100%;
+    color: variables.$title-blue;
 }
 </style>
