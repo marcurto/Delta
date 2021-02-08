@@ -9,6 +9,9 @@
     <TaulaEstrategiesBanner />
     <TaulaEstrategies />
     <TaulaNeixement />
+    <TaulaEntitats />
+    <Footer />
+
   </section>
 </template>
 
@@ -20,6 +23,9 @@ import TaulaDescription from "@/components/taula/TaulaDescription.vue";
 import TaulaEstrategiesBanner from "@/components/taula/TaulaEstrategiesBanner.vue";
 import TaulaEstrategies from "@/components/taula/TaulaEstrategies.vue";
 import TaulaNeixement from "@/components/taula/TaulaNeixement.vue";
+import TaulaEntitats from "@/components/taula/TaulaEntitats.vue";
+import Footer from "@/components/common/Footer.vue";
+
 
 export default {
   layout: "default",
@@ -30,7 +36,9 @@ export default {
     TaulaDescription,
     TaulaEstrategiesBanner,
     TaulaEstrategies,
-    TaulaNeixement
+    TaulaNeixement,
+    TaulaEntitats,
+    Footer
   },
 };
 </script>

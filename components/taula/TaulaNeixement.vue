@@ -49,6 +49,7 @@ export default {
   padding: 3rem 4rem 12rem;
   background-color: variables.$background-blue-dark;
   position: relative;
+  text-align: justify;
 
   &__main {
     padding: 5rem 0rem;
