@@ -1,56 +1,67 @@
 <template>
   <div class="news">
     <div class="news__image">
-      <img :src="`${imagen}`" />
+      <img src="~static/img/morfologia.png" />
     </div>
     <div class="news__main">
       <div class="news__dades">
         <div class="news__dades__top">
-          <img :src="`${logo}`" />
+          <img src="~static/img/elpais.png" />
           <h4>{{ date }}</h4>
         </div>
         <div class="news__dades__bottom">
-          <!-- <Tag /> -->
+          <Tag />
+          <Tag tag="Generalitat"/>
         </div>
       </div>
       <div class="news__titles">
         <h4>{{ title }}</h4>
-        <p>{{ sutitle }}</p>
+        <p>{{ subtitle }}</p>
       </div>
       <div class="news__share">
-        <a :href="`${href}`" target="_blank">Saber més</a>
+        <a :href="`${href}`" target="_blank"
+          >Saber més <i class="fas fa-external-link-alt"></i
+        ></a>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Tag from "@/components/ui/atoms/Tag.vue";
+
 export default {
   props: {
-    imagen: {
+    img: {
       type: String,
-      default: "LA TAULA DE CONCENS",
+      default: "~static/img/elpais.png",
     },
     logo: {
       type: String,
-      default: "PROPOSTES D'ACTUACIONS CONSENSUADES DES DEL TERRITORI",
+      default: "hola",
     },
     date: {
       type: String,
       default: "11-01-2021",
     },
-     title: {
+    title: {
       type: String,
-      default: "La disputa entre la Generalitat i el Ministeri bloqueja el pla de xoc per salvar el Delta de l'Ebre",
+      default:
+        "La disputa entre la Generalitat i el Ministeri bloqueja el pla de xoc per salvar el Delta de l'Ebre",
     },
-      subtitle: {
+    subtitle: {
       type: String,
-      default: "El Delta preocupa i molt, sobretot des que el temporal Gloria primer i el Filomena després, van posar sota el focus mediàtic els problemes endèmics que arrossega des de fa molts anys: la regressió permanent, el trencament de l’istme del Trabucador, la subsidència de la plana deltaica i per governar-los a tots, com a la pel·lícula, el que és potser el principal problema estructural esperona la resta: la manca de sediments.Avui hem parlat amb Rafa Sánchez, director tècnic i portaveu de la Taula de Consens.",
+      default:
+        "El Delta preocupa i molt, sobretot des que el temporal Gloria primer i el Filomena després, van posar sota el focus mediàtic els problemes endèmics que arrossega des de fa molts anys.",
     },
-      href: {
+    href: {
       type: String,
-      default: "https://deltacat.cat/2021/01/29/entrevista-a-rafa-sanchez-director-tecnic-i-portaveu-de-la-taula-de-consens-29-01-2021/",
+      default:
+        "https://deltacat.cat/2021/01/29/entrevista-a-rafa-sanchez-director-tecnic-i-portaveu-de-la-taula-de-consens-29-01-2021/",
     },
+  },
+  components: {
+    Tag,
   },
 };
 </script>
@@ -59,6 +70,54 @@ export default {
 @use "@/assets/style/tools/_mixins.scss";
 @use "@/assets/style/index.scss";
 
+@import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
+
 .news {
+  padding: 3rem 3rem 3rem 8rem;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  text-align: justify;
+
+  &__image {
+    max-width: 20rem;
+    height: auto;
+
+    img {
+      width: 18rem;
+    }
+  }
+
+  &__main {
+    padding-left: 2rem;
+    height: 100%;
+    align-items: space-between;
+  }
+
+  &__dades{
+    margin-bottom: 1rem;
+  }
+  &__dades__top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    img {
+      height: 2.5rem;
+    }
+
+    h4 {
+      font-size: variables.$text;
+    }
+  }
+
+  &__share {
+    margin-top: 2rem;
+    a {
+      color: black;
+    }
+  }
 }
 </style>

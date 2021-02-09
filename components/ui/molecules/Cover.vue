@@ -68,6 +68,10 @@ export default {
      h1{
        font-size: variables.$title-m;
      }
+
+     h4{
+       
+     }
   }
 
 }

@@ -6,6 +6,9 @@
       </Overally>
     </CoverBackground>
     <Years/>
+    <News/>
+        <News/>
+
     <Footer />
 
   </section>
@@ -16,6 +19,7 @@ import CoverBackground from "@/components/ui/atoms/CoverBackground.vue";
 import Cover from "@/components/ui/molecules/Cover.vue";
 import Overally from "@/components/ui/atoms/Overally.vue";
 import Years from "@/components/premsa/Years.vue";
+import News from "@/components/ui/molecules/News.vue";
 import Footer from "@/components/common/Footer.vue";
 
 
@@ -26,6 +30,7 @@ export default {
     Cover,
     Overally,
     Years,
+    News,
     Footer
   },
 };

@@ -2,8 +2,8 @@
   <nav class="years">
     <UiList theme="horizontal" class="years__list">
       <li>2018</li>
-      <li >2019</li>
-      <li >2020</li>
+      <li>2019</li>
+      <li>2020</li>
       <li>2021</li>
     </UiList>
   </nav>
