@@ -18,7 +18,7 @@ export default {
       type: String,
       default: null,
       validator(value) {
-        const themes = ["pla", "delta", "contacta"];
+        const themes = ["pla", "delta", "premsa", "contacta"];
         return themes.includes(value);
       },
     },
@@ -51,12 +51,15 @@ export default {
     background-image: url("~static/img/delta.jpg");
   }
 
+  &--premsa{
+    background-image: url("~static/img/premsa.png");
+  }
+
   &--contacta{
     height: 70vh;
     background-image: url("~static/img/contacta2.webp");
     background-position-y: center;
     background-position-x: center;
-
   }
 }
 </style>

@@ -89,5 +89,8 @@ export default {
       height: 8rem;
     }
   }
+  @media (max-width: 700px) {
+    padding: 2rem;
+  }
 }
 </style>

@@ -69,5 +69,9 @@ export default {
       display: none;
     }
   }
+
+  @media (max-width: 700px) {
+    padding: 2rem;
+  }
 }
 </style>

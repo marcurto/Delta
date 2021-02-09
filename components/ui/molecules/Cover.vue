@@ -63,5 +63,12 @@ export default {
   h1 {
     padding: 0rem;
   }
+
+     @media (max-width: 700px) {
+     h1{
+       font-size: variables.$title-m;
+     }
+  }
+
 }
 </style>

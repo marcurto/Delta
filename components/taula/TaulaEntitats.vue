@@ -34,7 +34,11 @@ export default {
   text-align: justify;
 
    @media (max-width: 780px) {
-     padding: 5rem 2rem 3rem
+     padding: 5rem 2rem 3rem;
+  }
+
+  @media (max-width: 700px) {
+    padding: 4rem 1rem 2rem;
   }
 
 }

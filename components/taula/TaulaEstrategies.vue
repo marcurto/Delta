@@ -63,6 +63,7 @@ export default {
   justify-content: space-around;
   padding: 3rem 2rem 5rem;
   text-align: center;
+  flex-wrap: wrap;
 
   &__column {
     width: 33%;
@@ -86,12 +87,22 @@ export default {
       height: 10rem;
     }
 
-    h4{
+    h4 {
       font-size: variables.$text;
     }
 
-    p{
+    p {
       font-size: variables.$text-s;
+    }
+  }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    &__column{
+      width: 100%;
     }
   }
 }

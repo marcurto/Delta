@@ -53,5 +53,8 @@ export default {
       margin: 0rem;
     }
   }
+  @media (max-width: 700px) {
+    padding: 2rem;
+  }
 }
 </style>
