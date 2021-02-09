@@ -1,7 +1,7 @@
 <template>
   <div class="banner-text">
-      <h2>{{ title }}</h2>
-      <p>{{ subtitle }}</p>
+    <h2>{{ title }}</h2>
+    <p>{{ subtitle }}</p>
   </div>
 </template>
 
@@ -14,7 +14,8 @@ export default {
     },
     subtitle: {
       type: String,
-      default: "Com a conclusions de concens existent en cadascun dels aspectes tractats, podriem assenyalar els més importants i que haurien d’estar inclosos com a estratègies fonalmentsl de qualsevol Pla Integral de Protecció del Delta.",
+      default:
+        "Com a conclusions de concens existent en cadascun dels aspectes tractats, podriem assenyalar els més importants i que haurien d’estar inclosos com a estratègies fonalmentsl de qualsevol Pla Integral de Protecció del Delta.",
     },
     theme: {
       type: String,
@@ -32,11 +33,25 @@ export default {
 @use "@/assets/style/tools/_mixins.scss";
 @use "@/assets/style/index.scss";
 
-.banner-text{
+.banner-text {
   padding: 5rem 7rem;
 
-  p{
+  p {
     margin-top: 0rem;
+  }
+
+  @media (max-width: 1130px) {
+    h2 {
+      font-size: variables.$title-s;
+    }
+  }
+
+   @media (max-width: 780px) {
+    padding: 3em 4rem;
+
+    p{
+      margin: 0rem;
+    }
   }
 }
 </style>

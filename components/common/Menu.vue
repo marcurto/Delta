@@ -27,8 +27,8 @@ export default {
   props: {
     callback: {
       required: true,
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -59,7 +59,7 @@ export default {
     transition-duration: 0.5s;
     font-family: variables.$font-family-titles;
 
-    i{
+    i {
       font-size: variables.$title-s;
     }
 
@@ -67,6 +67,14 @@ export default {
       color: variables.$logo;
       cursor: pointer;
       letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 700px) {
+      font-size: variables.$subtitle;
+    }
+
+    @media (min-width: 2000px) {
+      font-size: variables.$title;
     }
   }
 }

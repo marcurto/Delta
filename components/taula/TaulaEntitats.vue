@@ -33,5 +33,9 @@ export default {
   position: relative;
   text-align: justify;
 
+   @media (max-width: 780px) {
+     padding: 5rem 2rem 3rem
+  }
+
 }
 </style>

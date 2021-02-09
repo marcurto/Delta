@@ -43,5 +43,12 @@ export default {
   p {
     margin: 0rem;
   }
+
+    @media (max-width: 700px) {
+       flex-direction: column;
+       &__contact{
+         font-size: 10px;
+       }
+    }
 }
 </style>

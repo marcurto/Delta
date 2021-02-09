@@ -1,7 +1,7 @@
 <template>
   <section class="description">
     <img src="~static/img/logo-big-dos.png" />
-    <div></div>
+    <div class="description__blank"></div>
     <div class="description__main">
       <h3>QUÈ ÉS LA TAULA DE CONCENS?</h3>
       <p>
@@ -53,11 +53,21 @@ export default {
   display: grid;
   grid-template-columns: 1fr 2.5fr;
 
-  &__main{padding: 5rem 0rem;}
+  &__main {
+    padding: 5rem 0rem;
+  }
 
   img {
     width: 500px;
     position: absolute;
+  }
+
+  @media (max-width: 780px) {
+    display: block;
+    padding: 1rem 3rem;
+    &__blank {
+      display: none;
+    }
   }
 }
 </style>

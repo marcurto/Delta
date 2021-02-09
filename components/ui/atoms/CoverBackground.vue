@@ -18,7 +18,7 @@ export default {
       type: String,
       default: null,
       validator(value) {
-        const themes = ["pla", "delta"];
+        const themes = ["pla", "delta", "contacta"];
         return themes.includes(value);
       },
     },
@@ -40,6 +40,8 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-position-y: center;
+  background-position-x: center;
 
   &--pla{
     background-image: url("~static/img/pla.jpg");
@@ -47,6 +49,14 @@ export default {
 
   &--delta{
     background-image: url("~static/img/delta.jpg");
+  }
+
+  &--contacta{
+    height: 70vh;
+    background-image: url("~static/img/contacta2.webp");
+    background-position-y: center;
+    background-position-x: center;
+
   }
 }
 </style>

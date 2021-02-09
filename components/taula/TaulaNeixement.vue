@@ -49,7 +49,7 @@ export default {
   padding: 3rem 4rem 12rem;
   background-color: variables.$background-blue-dark;
   position: relative;
-  text-align: justify;
+  text-align: left;
 
   &__main {
     padding: 5rem 0rem;
@@ -76,6 +76,17 @@ export default {
 
     img {
       height: 15rem;
+    }
+  }
+   @media (max-width: 780px) {
+     padding: 3rem 4rem 5rem;
+
+     &__images__column{
+      width: 25rem;
+      height: 10rem;
+     }
+    img{
+      height: 8rem;
     }
   }
 }

@@ -3,7 +3,7 @@
     <div class="nav__menu">
       <div>
         <i class="fas fa-bars" @click="showSidebar()"></i>
-        <Menu v-if="sidebar" :callback="showSidebar"/>
+        <Menu v-if="sidebar" :callback="showSidebar" />
       </div>
       <p>Taula de Concens pel Delta</p>
     </div>
@@ -61,11 +61,18 @@ export default {
   &__menu {
     @include mixins.space-between;
 
-    p{
+    p {
       margin-left: 1rem;
     }
+
     i {
       cursor: pointer;
+    }
+  }
+
+  &__contact {
+    @media (max-width: 700px) {
+        display: none;
     }
   }
 }
