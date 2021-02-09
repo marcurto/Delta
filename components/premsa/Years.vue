@@ -1,6 +1,6 @@
 <template>
   <nav class="years">
-    <UiList theme="horizontal">
+    <UiList theme="horizontal" class="years__list">
       <li>2018</li>
       <li >2019</li>
       <li >2020</li>
@@ -39,8 +39,16 @@ export default {
 
 .years {
   width: 100%;
-  padding-right: 4rem;
-  border-bottom: black 2px solid;
-  margin-bottom: 2rem;
+  margin: 4rem 0rem;
+
+  &__list{
+    margin-right: 4rem;
+    border-bottom: black 2px solid;
+    justify-content: flex-end;
+
+    li{
+      margin-right: 1rem;
+    }
+  }
 }
 </style>
