@@ -5,7 +5,7 @@
       <li @click="move('taula')">La Taula de Concens</li>
       <li @click="move('pla')">El Pla Delta</li>
       <li @click="move('delta')">El Delta de l'Ebre</li>
-      <li>Sala de Premsa</li>
+      <li @click="move('premsa')">Sala de Premsa</li>
       <li @click="move('contacta')">Contacta</li>
     </UiList>
   </div>

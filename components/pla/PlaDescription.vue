@@ -1,0 +1,38 @@
+<template>
+  <section class="description">
+      <h3>QUÈ ÉS EL PLA DELTA?</h3>
+      <p>
+        La visió compartida des d’aquest territori contempla i viu el Delta com un ecosistema únic, natural i dinàmic, amb biodiversitat característica, paisatges oberts i ric patrimoni cultural, un espai del qual gaudeix tothom i que proporciona beneficis de forma sostenible a les generacions presents i futures.
+      </p>
+      <p>
+        Per això, durant l’any 2019 es va elaborar el Pla Delta, un document estratègic que recull i desenvolupa la visió del territori de com afrontar el repte de la regressió i la inundació. Finalment, va ser presentat el 28 de gener de 2020 amb la única finalitat de fer front a les possibles conseqüències que pot tenir la no actuació.
+      </p>
+  </section>
+</template>
+
+<script>
+export default {
+  layout: "default",
+  components: {},
+};
+</script>
+
+<style lang="scss" scoped>
+@use "@/assets/style/settings/_variables.scss";
+@use "@/assets/style/tools/_mixins.scss";
+@use "@/assets/style/index.scss";
+
+.description {
+  height: 100%;
+  padding: 4rem 4rem;
+  background-color: variables.$background-green;
+
+  @media (max-width: 780px) {
+    padding: 1rem 3rem;
+  }
+
+  @media (max-width: 700px) {
+    padding: 2rem;
+  }
+}
+</style>

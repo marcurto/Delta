@@ -2,15 +2,14 @@
   <section>
     <CoverBackground theme="premsa">
       <Overally>
-        <Cover title="SALA DE PREMSA"/>
+        <Cover title="SALA DE PREMSA" />
       </Overally>
     </CoverBackground>
-    <Years/>
-    <News/>
-        <News/>
+    <Years />
+    <News />
+    <News />
 
     <Footer />
-
   </section>
 </template>
 
@@ -22,7 +21,6 @@ import Years from "@/components/premsa/Years.vue";
 import News from "@/components/ui/molecules/News.vue";
 import Footer from "@/components/common/Footer.vue";
 
-
 export default {
   layout: "default",
   components: {
@@ -31,7 +29,7 @@ export default {
     Overally,
     Years,
     News,
-    Footer
+    Footer,
   },
 };
 </script>

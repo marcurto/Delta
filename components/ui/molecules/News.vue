@@ -119,5 +119,16 @@ export default {
       color: black;
     }
   }
+
+  @media (max-width: 800px) {
+  padding: 1rem 1rem;
+  flex-direction: column;
+
+    &__main{
+          padding-left: 0rem;
+          margin-top: 1.5rem;
+
+    }
+    }
 }
 </style>
