@@ -5,7 +5,7 @@
         <i class="fas fa-bars" @click="showSidebar()"></i>
         <Menu v-if="sidebar" :callback="showSidebar" />
       </div>
-      <p>Taula de Concens pel Delta</p>
+      <p @click="move('inici')">Taula de Concens pel Delta</p>
     </div>
     <div class="nav__contact">
       <UiList theme="horizontal">

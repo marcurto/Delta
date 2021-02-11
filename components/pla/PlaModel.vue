@@ -39,7 +39,7 @@ export default {
 .description {
   height: 100%;
   padding: 4rem 4rem;
-  background-color: variables.$background-green;
+  background-color: variables.$white;
 
   &__grafic {
     width: 100%;

@@ -1,21 +1,24 @@
 <template>
   <section>
-    <!-- <video autoPlay="autoplay" loop="loop" class="video" muted>
-      <source src="~static/img/portada.m4v" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video> -->
-
-    <h1>hi</h1>
+    <CoverBackground theme="delta">
+      <Overally theme="delta">
+        <CountdownCointainer />
+      </Overally>
+    </CoverBackground>
   </section>
 </template>
 
 <script>
-import Navbar from "@/components/common/Navbar.vue";
+import CountdownCointainer from "@/components/ui/molecules/CountdownContainer.vue";
+import CoverBackground from "@/components/ui/atoms/CoverBackground.vue";
+import Overally from "@/components/ui/atoms/Overally.vue";
 
 export default {
   layout: "default",
   components: {
-    Navbar,
+    CountdownCointainer,
+    CoverBackground,
+    Overally
   },
 };
 </script>
@@ -26,7 +29,6 @@ export default {
 @use "@/assets/style/index.scss";
 
 section {
-  background-color: red;
   height: 100vh;
 }
 </style>
