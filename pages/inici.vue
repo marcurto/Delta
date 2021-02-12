@@ -5,6 +5,8 @@
         <CountdownCointainer />
       </Overally>
     </CoverBackground>
+    <!-- <Video /> -->
+    <!-- <CarouselView /> -->
   </section>
 </template>
 
@@ -12,13 +14,18 @@
 import CountdownCointainer from "@/components/ui/molecules/CountdownContainer.vue";
 import CoverBackground from "@/components/ui/atoms/CoverBackground.vue";
 import Overally from "@/components/ui/atoms/Overally.vue";
+// import CarouselView from "@/components/ui/atoms/CarouselView.vue";
+// import Video from "@/components/ui/atoms/Video.vue";
+
 
 export default {
   layout: "default",
   components: {
     CountdownCointainer,
     CoverBackground,
-    Overally
+    Overally,
+    // CarouselView,
+    // Video
   },
 };
 </script>

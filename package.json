@@ -12,7 +12,10 @@
     "core-js": "^3.8.3",
     "loader-utils": "^2.0.0",
     "nuxt": "^2.14.12",
-    "sass": "^1.32.6"
+    "sass": "^1.32.6",
+    "swiper": "^6.4.11",
+    "v-video-embed": "^1.0.8",
+    "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {
     "node-sass": "^5.0.0",

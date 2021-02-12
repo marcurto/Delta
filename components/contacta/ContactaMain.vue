@@ -26,7 +26,10 @@
       <div>
         <img src="~static/img/008-instagram-1.png" />
         <img src="~static/img/006-twitter-1.png" />
+        <img src="~static/img/facebook.png" />
+        <img src="~static/img/whatsapp.png" />
         <img src="~static/img/007-linkedin-1.png" />
+
       </div>
       </div>
     </div>

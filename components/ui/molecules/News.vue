@@ -73,7 +73,7 @@ export default {
 @import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
 
 .news {
-  padding: 3rem 3rem 3rem 8rem;
+  padding: 3rem 3rem 3rem 5rem;
   display: flex;
   height: 100%;
   align-items: center;
