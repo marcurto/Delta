@@ -1,13 +1,13 @@
 <template>
   <footer class="footer">
     <div class="footer__title">
-      <p>Taula de Concens pel Delta</p>
+      <p>Taula de Consens pel Delta</p>
     </div>
     <div class="footer__contact">
       <UiList theme="horizontal">
         <li>977 48 06 80 / 652 061 315</li>
         <li>|</li>
-        <a href="#">administracio@tauladeconcens.cat</a>
+        <a href="#">administracio@tauladeconsens.cat</a>
       </UiList>
     </div>
   </footer>

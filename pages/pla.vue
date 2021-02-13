@@ -2,12 +2,14 @@
   <section>
     <CoverBackground theme="pla">
       <Overally theme="pla">
-        <Cover title="EL PLA DELTA" theme="pla" />
+        <Cover title="EL PLA DELTA" subtitle="PROPOSTES D'ACTUACIONS CONSENSUADES DES DEL TERRITORI" theme="pla" />
       </Overally>
     </CoverBackground>
     <PlaDescription />
     <PlaPrincipis/>
     <PlaModel />
+    <ZonesIntervencio />
+    <Organigrama />
     <Footer />
   </section>
 </template>
@@ -19,6 +21,8 @@ import Overally from "@/components/ui/atoms/Overally.vue";
 import PlaDescription from "@/components/pla/PlaDescription.vue";
 import PlaPrincipis from "@/components/pla/PlaPrincipis.vue";
 import PlaModel from "@/components/pla/PlaModel.vue";
+import ZonesIntervencio from "@/components/pla/ZonesIntervencio.vue";
+import Organigrama from "@/components/pla/Organigrama.vue";
 import Footer from "@/components/common/Footer.vue";
 
 export default {
@@ -30,6 +34,8 @@ export default {
     PlaDescription,
     PlaPrincipis,
     PlaModel,
+    ZonesIntervencio,
+    Organigrama,
     Footer,
   },
 };

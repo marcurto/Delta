@@ -2,7 +2,7 @@
   <div id="navigation-mobile">
     <UiList>
       <li><i class="fas fa-times" @click="callback()"></i></li>
-      <li @click="move('taula')">La Taula de Concens</li>
+      <li @click="move('taula')">La Taula de Consens</li>
       <li @click="move('pla')">El Pla Delta</li>
       <li @click="move('delta')">El Delta de l'Ebre</li>
       <li @click="move('premsa')">Sala de Premsa</li>
@@ -52,7 +52,7 @@ export default {
 
   li {
     color: black;
-    font-size: variables.$title-m;
+    font-size: variables.$title-s;
     text-align: center;
     margin: 1.5rem;
     text-transform: uppercase;

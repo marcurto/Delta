@@ -19,11 +19,11 @@ export default {
     },
     title: {
       type: String,
-      default: "LA TAULA DE CONCENS",
+      default: "LA TAULA DE CONSENS",
     },
     subtitle: {
       type: String,
-      default: "PROPOSTES D'ACTUACIONS CONSENSUADES DES DEL TERRITORI",
+      default: "LA VEU DEL TERRITORI",
     },
     theme: {
       type: String,

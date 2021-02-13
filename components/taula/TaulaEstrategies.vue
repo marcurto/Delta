@@ -36,7 +36,7 @@
         <p>
           S’entenen com a mesures urgents a efectuar a curt termini. Es constata
           l’acceptació de la seva diversificació, és a dir, aplicar diferents
-          actuacions segons la tipologia de zona a protegiri segons la gravetat
+          actuacions segons la tipologia de zona a protegir i segons la gravetat
           de la situació.
         </p>
       </div>
@@ -75,6 +75,12 @@ export default {
     img {
       height: 13rem;
       width: auto;
+    }
+  }
+
+  &__text{
+    p{
+      text-align: justify;
     }
   }
 

@@ -1,12 +1,12 @@
 <template>
   <div class="news">
     <div class="news__image">
-      <img src="~static/img/morfologia.png" />
+      <img :src="`${img}`" />
     </div>
     <div class="news__main">
       <div class="news__dades">
         <div class="news__dades__top">
-          <img src="~static/img/elpais.png" />
+          <img :src="`${logo}`" />
           <h4>{{ date }}</h4>
         </div>
         <div class="news__dades__bottom">
@@ -34,11 +34,11 @@ export default {
   props: {
     img: {
       type: String,
-      default: "~static/img/elpais.png",
+      default: "/_nuxt/static/img/morfologia.png",
     },
     logo: {
       type: String,
-      default: "hola",
+      default: "/_nuxt/static/img/elpais.png",
     },
     date: {
       type: String,
@@ -78,6 +78,7 @@ export default {
   height: 100%;
   align-items: center;
   text-align: justify;
+  flex-direction: column;
 
   &__image {
     max-width: 20rem;

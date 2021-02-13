@@ -6,7 +6,7 @@ $_logo: #1186DA;
 
 $_dark-green: #1F271F;
 $_soft-green: #EFF9E9;
-$_green: #9EC3E0;
+$_green:  rgba(200, 219, 191, 0.88);
 
 $_dark-brown: #252019;
 
@@ -27,7 +27,7 @@ $background-blue-dark: $_blue;
 // Green
 $title-green: $_dark-green;
 $background-green: $_soft-green;
-// $_background-green-dark: $_green;
+$background-green-dark: $_green;
 
 // Brown
 $title-brown: $_dark-brown;

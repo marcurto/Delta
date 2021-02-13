@@ -4,10 +4,34 @@
       <carousel-slide
         v-for="slide in slides"
         :key="slide"
-        class="carouser-view__slider"
+        class="carouser-slider"
       >
         <!-- <img :src="slide" :alt="slide"> -->
         <div>
+          <h4>PRESPECTIVA ÀMPLIA I GLOBAL</h4>
+          <p>
+            Una perspectiva àmplia i global (temàtica i geogràfica) que tingui
+            en compte la interdependència i disparitat dels sistemes naturals i
+            les activitats humanes que tenen incidència al delta de l’Ebre.
+          </p>
+        </div>
+         <div>
+          <h4>PRESPECTIVA ÀMPLIA I GLOBAL</h4>
+          <p>
+            Una perspectiva àmplia i global (temàtica i geogràfica) que tingui
+            en compte la interdependència i disparitat dels sistemes naturals i
+            les activitats humanes que tenen incidència al delta de l’Ebre.
+          </p>
+        </div>
+         <div>
+          <h4>PRESPECTIVA ÀMPLIA I GLOBAL</h4>
+          <p>
+            Una perspectiva àmplia i global (temàtica i geogràfica) que tingui
+            en compte la interdependència i disparitat dels sistemes naturals i
+            les activitats humanes que tenen incidència al delta de l’Ebre.
+          </p>
+        </div>
+         <div>
           <h4>PRESPECTIVA ÀMPLIA I GLOBAL</h4>
           <p>
             Una perspectiva àmplia i global (temàtica i geogràfica) que tingui
@@ -83,6 +107,8 @@ export default {
   left: 0;
   bottom: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
 }
 .carousel-slider img {
   width: 100%;

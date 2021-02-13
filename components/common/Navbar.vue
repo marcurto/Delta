@@ -5,13 +5,13 @@
         <i class="fas fa-bars" @click="showSidebar()"></i>
         <Menu v-if="sidebar" :callback="showSidebar" />
       </div>
-      <p @click="move('inici')">Taula de Concens pel Delta</p>
+      <p @click="move('inici')">Taula de Consens pel Delta</p>
     </div>
     <div class="nav__contact">
       <UiList theme="horizontal">
         <li>977 48 06 80 / 652 061 315</li>
         <li>|</li>
-        <a href="#">administracio@tauladeconcens.cat</a>
+        <a href="#">administracio@tauladeconsens.cat</a>
       </UiList>
     </div>
   </nav>

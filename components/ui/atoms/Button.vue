@@ -12,7 +12,7 @@ export default {
     subtitle: {
       type: String,
       default:
-        "Com a conclusions de concens existent en cadascun dels aspectes tractats, podriem assenyalar els més importants i que haurien d’estar inclosos com a estratègies fonalmentsl de qualsevol Pla Integral de Protecció del Delta.",
+        "Com a conclusions de consens existent en cadascun dels aspectes tractats, podriem assenyalar els més importants i que haurien d’estar inclosos com a estratègies fonamentals de qualsevol Pla Integral de Protecció del Delta.",
     },
     theme: {
       type: String,

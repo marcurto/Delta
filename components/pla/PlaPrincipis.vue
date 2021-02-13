@@ -6,7 +6,9 @@
         <p>Assumint les recomanacions sobre la gestió integrada de les zones costaneres a Europa, la gestió del Delta de l’Ebre s’hauria de dur a terme sobre la base de:</p>
       </div>
       <div class="principis__items">
-        <div>
+            <!-- <CarouselView /> -->
+
+        <!-- <div>
           <h4>PRESPECTIVA A LLARG TERMINI</h4>
           <p>temàtica i geogràfica) que tingui en compte la interdependència i disparitat dels sistemes naturals i les activitats humanes que tenen incidència al delta de l’Ebre</p>
         </div>
@@ -37,7 +39,7 @@
          <div>
           <h4>PRESPECTIVA AMPLIA I GLOBAL</h4>
           <p>temàtica i geogràfica) que tingui en compte la interdependència i disparitat dels sistemes naturals i les activitats humanes que tenen incidència al delta de l’Ebre</p>
-        </div>
+        </div> -->
       </div>
     </Overally>
   </section>
@@ -46,13 +48,16 @@
 <script>
 import Banner from "@/components/ui/molecules/Banner.vue";
 import Overally from "@/components/ui/atoms/Overally.vue";
+import CarouselView from "@/components/ui/atoms/CarouselView.vue";
+
 
 
 export default {
   layout: "default",
   components: {
     Banner,
-    Overally
+    Overally,
+    CarouselView
   },
 };
 </script>
