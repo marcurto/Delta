@@ -6,9 +6,9 @@
       </Overally>
     </CoverBackground>
     <Years />
-    <RecullNoticies18 />
-    <!-- <RecullNoticies19 />
-    <RecullNoticies20 />
+    <!-- <RecullNoticies18 /> -->
+    <RecullNoticies19 />
+    <!-- <RecullNoticies20 />
     <RecullNoticies21 /> -->
     <Footer />
   </section>
@@ -19,7 +19,7 @@ import CoverBackground from "@/components/ui/atoms/CoverBackground.vue";
 import Cover from "@/components/ui/molecules/Cover.vue";
 import Overally from "@/components/ui/atoms/Overally.vue";
 import Years from "@/components/premsa/Years.vue";
-import RecullNoticies18 from "@/components/premsa/RecullNoticies18.vue";
+import RecullNoticies19 from "@/components/premsa/RecullNoticies19.vue";
 import Footer from "@/components/common/Footer.vue";
 
 export default {
@@ -29,7 +29,7 @@ export default {
     Cover,
     Overally,
     Years,
-    RecullNoticies18,
+    RecullNoticies19,
     Footer,
   },
 };

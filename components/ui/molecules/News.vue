@@ -78,21 +78,25 @@ export default {
   height: 100%;
   align-items: center;
   text-align: justify;
-  flex-direction: column;
+
+  hr{
+    width: 100%;
+  }
 
   &__image {
-    max-width: 20rem;
-    height: auto;
-
-    img {
-      width: 18rem;
-    }
+    width: 30%;
+  
   }
 
   &__main {
     padding-left: 2rem;
     height: 100%;
     align-items: space-between;
+    width: 70%;
+
+    p{
+      margin-top: 0rem;
+    }
   }
 
   &__dades{
@@ -112,6 +116,7 @@ export default {
     h4 {
       font-size: variables.$text;
     }
+    
   }
 
   &__share {
