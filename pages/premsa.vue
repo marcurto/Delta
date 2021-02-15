@@ -59,6 +59,17 @@ export default {
 section {
   height: 100%;
   color: variables.$title-blue;
+
+  li{
+    cursor: pointer;
+    transition-duration: 0.7s;
+
+    &:hover{
+      
+      color: variables.$logo;
+      font-weight: 700;
+      }
+  }
 }
 
 
