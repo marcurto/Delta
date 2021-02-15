@@ -6,6 +6,7 @@
         <p>Assumint les recomanacions sobre la gestió integrada de les zones costaneres a Europa, la gestió del Delta de l’Ebre s’hauria de dur a terme sobre la base de:</p>
       </div>
       <div class="principis__items">
+        <Carousel />
             <!-- <CarouselView /> -->
 
         <!-- <div>
@@ -48,7 +49,7 @@
 <script>
 import Banner from "@/components/ui/molecules/Banner.vue";
 import Overally from "@/components/ui/atoms/Overally.vue";
-import CarouselView from "@/components/ui/atoms/CarouselView.vue";
+import Carousel from "@/components/ui/atoms/Carousel.vue";
 
 
 
@@ -57,7 +58,7 @@ export default {
   components: {
     Banner,
     Overally,
-    CarouselView
+    Carousel
   },
 };
 </script>

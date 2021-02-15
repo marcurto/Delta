@@ -1,7 +1,6 @@
 <template>
   <div class="zones-intervencio">
     <div class="zones-intervencio__item">
-      <img src="~static/img/zonauno.png" />
       <div class="zones-intervencio__text" style="text-align: right;">
         <h3>ZONES D'INTERVENCIÓ</h3>
         <p>
@@ -13,8 +12,14 @@
           embassaments de la conca.
         </p>
       </div>
+      <div class="zones-intervencio__image">
+        <img src="~static/img/zonados.png" />
+      </div>
     </div>
     <div class="zones-intervencio__item">
+      <div class="zones-intervencio__image">
+      <img src="~static/img/zonados.png" />
+      </div>
       <div class="zones-intervencio__text">
         <p>
           En el cas de les intervencions al delta de l’Ebre, el criteris
@@ -29,8 +34,6 @@
           Delta:
         </p>
       </div>
-
-      <img src="~static/img/zonados.png" />
     </div>
   </div>
 </template>
@@ -44,12 +47,12 @@ export default {};
 @use "@/assets/style/index.scss";
 
 .zones-intervencio {
-  background-color: variables.$background-green;
   padding: 3rem 0rem;
   width: 100%;
+  margin: 2rem 0rem;
 
   &__item {
-    background-color: variables.$background-green-dark;
+    background-color: variables.$gray;
     display: flex;
     width: 100%;
     margin: 2rem 0rem;
@@ -57,6 +60,8 @@ export default {};
 
   &__text{
     padding: 3rem;
+    color: variables.$title-green;
+    width: 60%;
   }
 }
 </style>

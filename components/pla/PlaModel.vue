@@ -70,7 +70,7 @@ export default {
   &__right {
     height: 100%;
     width: 60%;
-    padding: 4rem;
+    padding: 4rem 0rem;
 
     img{
       position: relative; 

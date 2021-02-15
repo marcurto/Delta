@@ -1,57 +1,89 @@
+
 <template>
-    <div class="carousel"  @keydown="checkSlide($event)" tabindex="0">
-        <slot></slot>
-        <button @click.prevent="next" class="btn btn-next"><i class="fa fa-angle-right"></i></button>
-        <button @click.prevent="prev" class="btn btn-prev"><i class="fa fa-angle-left"></i></button>
-    </div>
+  <div>
+    <VueSlickCarousel :arrows="true" :dots="true" v-bind="settings">
+      <img
+        class="d-block w-100"
+        src="~static/img/008-instagram-1.png"
+        alt="First slide"
+      />
+      <img
+        class="d-block w-100"
+        src="~static/img/008-instagram-1.png"
+        alt="Second slide"
+      />
+      <img
+        class="d-block w-100"
+        src="~static/img/008-instagram-1.png"
+        alt="Third slide"
+      />
+       <img
+        class="d-block w-100"
+        src="~static/img/008-instagram-1.png"
+        alt="Third slide"
+      />
+       <img
+        class="d-block w-100"
+        src="~static/img/008-instagram-1.png"
+        alt="Third slide"
+      />
+       <img
+        class="d-block w-100"
+        src="~static/img/008-instagram-1.png"
+        alt="Third slide"
+      />
+    </VueSlickCarousel>
+  </div>
 </template>
 <script>
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+// optional style for arrows & dots
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
-    data () {
-        return {
-            index : 0,
-            slides : [],
-            slideDirection: '',
-        }
+  components: {
+    VueSlickCarousel,
+  },
+  name: "slide",
+  data() {
+    return {
+      settings: {
+  "dots": true,
+  "infinite": false,
+  "speed": 500,
+  "slidesToShow": 4,
+  "slidesToScroll": 4,
+  "initialSlide": 0,
+  "responsive": [
+    {
+      "breakpoint": 1024,
+      "settings": {
+        "slidesToShow": 3,
+        "slidesToScroll": 3,
+        "infinite": true,
+        "dots": true
+      }
     },
-    computed: {
-        slidesLength() {
-            return this.slides.length;
-        }
+    {
+      "breakpoint": 600,
+      "settings": {
+        "slidesToShow": 2,
+        "slidesToScroll": 2,
+        "initialSlide": 2
+      }
     },
-    mounted(){
-        this.slides = this.$children;
-        this.slides.map( (slide,index) => {
-            slide.index = index;
-        });
-    },
-    methods: {
-        next(){
-            this.index++;
-            if(this.index >= this.slidesLength){
-                this.index = 0;
-            }
-            this.slideDirection = 'slide-right';
-        },
-        prev(){
-            this.index--;
-            if(this.index < 0){
-                this.index = this.slidesLength - 1;
-            }
-             this.slideDirection = 'slide-left';
-        },
-        checkSlide(event){
-            if(event.keyCode === 39){
-                this.next();
-            }else if (event.keyCode === 37){
-                this.prev();
-            }else {
-                return;
-            }
-        },
+    {
+      "breakpoint": 480,
+      "settings": {
+        "slidesToShow": 1,
+        "slidesToScroll": 1
+      }
     }
-}
+  ]
+},
+    };
+  },
+};
 </script>
-<style>
-    
-</style>
+
+
