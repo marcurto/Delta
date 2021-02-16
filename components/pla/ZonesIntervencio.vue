@@ -1,7 +1,9 @@
 <template>
   <div class="zones-intervencio">
     <div class="zones-intervencio__item">
-      <div class="zones-intervencio__text" style="text-align: right;">
+      <div class="zones-intervencio__image__uno">
+      </div>
+      <div class="zones-intervencio__text">
         <h3>ZONES D'INTERVENCIÓ</h3>
         <p>
           Una primera zona d’intervenció que redundaria en un benefici general
@@ -11,16 +13,6 @@
           política correcta de gestió sostenible dels sediments en tots els
           embassaments de la conca.
         </p>
-      </div>
-      <div class="zones-intervencio__image">
-        <img src="~static/img/zonados.png" />
-      </div>
-    </div>
-    <div class="zones-intervencio__item">
-      <div class="zones-intervencio__image">
-      <img src="~static/img/zonados.png" />
-      </div>
-      <div class="zones-intervencio__text">
         <p>
           En el cas de les intervencions al delta de l’Ebre, el criteris
           empleats són: processos litorals dominants (zones d'erosió envers
@@ -31,14 +23,16 @@
         </p>
         <p>
           D’aquesta manera s’han identificat 15 sectors diferents a la costa del
-          Delta:
+          Delta i, per a cadascuna de les quals, s'han proposat les següents mesures:
         </p>
       </div>
     </div>
+    
   </div>
 </template>
 
 <script>
+
 export default {};
 </script>
 <style lang="scss" scoped>
@@ -49,9 +43,9 @@ export default {};
 .zones-intervencio {
   padding: 3rem 0rem;
   width: 100%;
-  margin: 2rem 0rem;
 
   &__item {
+    height: 100%;
     background-color: variables.$gray;
     display: flex;
     width: 100%;
@@ -61,7 +55,28 @@ export default {};
   &__text{
     padding: 3rem;
     color: variables.$title-green;
-    width: 60%;
+    width: 50%;
+    text-align: justify;
+  }
+
+
+  &__image__uno{
+    background-image: url("~static/img/conca.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  width: 50%;
+  background-color: red;
+  }
+
+   &__image__dos{
+    background-image: url("~static/img/delta.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  width: 50%;
   }
 }
 </style>

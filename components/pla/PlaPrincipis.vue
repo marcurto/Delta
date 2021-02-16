@@ -7,40 +7,6 @@
       </div>
       <div class="principis__items">
         <Carousel />
-            <!-- <CarouselView /> -->
-
-        <!-- <div>
-          <h4>PRESPECTIVA A LLARG TERMINI</h4>
-          <p>temàtica i geogràfica) que tingui en compte la interdependència i disparitat dels sistemes naturals i les activitats humanes que tenen incidència al delta de l’Ebre</p>
-        </div>
-          <div>
-          <h4>PRESPECTIVA AMPLIA I GLOBAL</h4>
-          <p>temàtica i geogràfica) que tingui en compte la interdependència i disparitat dels sistemes naturals i les activitats humanes que tenen incidència al delta de l’Ebre</p>
-        </div>
-         <div>
-          <h4>PRESPECTIVA AMPLIA I GLOBAL</h4>
-          <p>temàtica i geogràfica) que tingui en compte la interdependència i disparitat dels sistemes naturals i les activitats humanes que tenen incidència al delta de l’Ebre</p>
-        </div>
-         <div>
-          <h4>PRESPECTIVA AMPLIA I GLOBAL</h4>
-          <p>temàtica i geogràfica) que tingui en compte la interdependència i disparitat dels sistemes naturals i les activitats humanes que tenen incidència al delta de l’Ebre</p>
-        </div>
-         <div>
-          <h4>PRESPECTIVA AMPLIA I GLOBAL</h4>
-          <p>temàtica i geogràfica) que tingui en compte la interdependència i disparitat dels sistemes naturals i les activitats humanes que tenen incidència al delta de l’Ebre</p>
-        </div>
-         <div>
-          <h4>PRESPECTIVA AMPLIA I GLOBAL</h4>
-          <p>temàtica i geogràfica) que tingui en compte la interdependència i disparitat dels sistemes naturals i les activitats humanes que tenen incidència al delta de l’Ebre</p>
-        </div>
-         <div>
-          <h4>PRESPECTIVA AMPLIA I GLOBAL</h4>
-          <p>temàtica i geogràfica) que tingui en compte la interdependència i disparitat dels sistemes naturals i les activitats humanes que tenen incidència al delta de l’Ebre</p>
-        </div>
-         <div>
-          <h4>PRESPECTIVA AMPLIA I GLOBAL</h4>
-          <p>temàtica i geogràfica) que tingui en compte la interdependència i disparitat dels sistemes naturals i les activitats humanes que tenen incidència al delta de l’Ebre</p>
-        </div> -->
       </div>
     </Overally>
   </section>
@@ -88,11 +54,12 @@ export default {
     text-align: left;
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
 
     div{
-      width: 25%;
       padding: 0rem 1rem;
       margin-bottom: 1rem;
+    width: 100%;
     }
 
     h4{

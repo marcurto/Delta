@@ -15,7 +15,7 @@ export default {
       type: String,
       default: null,
       validator(value) {
-        const themes = ["pla", "delta", "banner"];
+        const themes = ["pla", "delta", "banner" , "contacta"];
         return themes.includes(value);
       },
     },
@@ -43,6 +43,11 @@ export default {
   &--banner{
     background-color: rgba(52, 56, 65, 0.78);
     height: 100%;
+    width: 100%;
+  }
+
+  &--contacta{
+     height: 100%;
     width: 100%;
   }
 }

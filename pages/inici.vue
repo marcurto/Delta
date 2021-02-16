@@ -1,11 +1,11 @@
 <template>
   <section>
-    <!-- <CoverBackground theme="delta">
+   <CoverBackground theme="delta">
       <Overally theme="delta">
         <CountdownCointainer />
       </Overally>
     </CoverBackground>
-    <Video /> -->
+    <!-- <Video />  -->
   </section>
 </template>
 
@@ -19,9 +19,9 @@ import Overally from "@/components/ui/atoms/Overally.vue";
 export default {
   layout: "default",
   components: {
-    // CountdownCointainer,
-    // CoverBackground,
-    // Overally,
+    CountdownCointainer,
+    CoverBackground,
+    Overally,
     // Video
   },
 };

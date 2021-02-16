@@ -1,7 +1,7 @@
 <template>
   <section>
      <CoverBackground theme="contacta">
-      <Overally>
+      <Overally theme="contacta">
         <Cover title="CONTACTA" subtitle="CONTACTA AMB NOSALTRES I ESTAREM ENCANTATS D'ATENDRE QUALSEVOL DUBTE"/>
       </Overally>
     </CoverBackground>
@@ -38,5 +38,6 @@ export default {
 section {
   height: 100%;
   color: variables.$title-blue;
+  background-color: variables.$background-blue-dark;
 }
 </style>

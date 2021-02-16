@@ -1,6 +1,6 @@
 <template>
   <div class="organigrama">
-    <h3>RESUM MESURES PROPOSADES</h3>
+    <h4>RESUM MESURES PROPOSADES</h4>
     <img src="~static/img/organigrama.png" />
   </div>
 </template>
@@ -19,11 +19,11 @@ export default {};
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem 4rem 2rem;
+  padding: 1rem 0rem 4rem 2rem;
   img{
     width: 80%;
   }
-  h3{
+  h4{
     margin-bottom: 2rem;
   }
 }

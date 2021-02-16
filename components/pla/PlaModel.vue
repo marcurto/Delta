@@ -54,6 +54,8 @@ export default {
   height: 100%;
   width: 100%;
   display: flex;
+    margin-top: 3rem;
+
 
   &__left {
     height: 100%;

@@ -91,5 +91,10 @@ export default {
   @media (max-width: 700px) {
     padding: 2rem;
   }
+   @media (max-width: 500px) {
+    h3{
+      font-size: variables.$subtitle;
+    }
+  }
 }
 </style>

@@ -5,6 +5,7 @@
         <Cover title="EL DELTA DE L'EBRE" theme="delta"/>
       </Overally>
     </CoverBackground>
+    <DeltaDescription />
   </section>
 </template>
 
@@ -12,13 +13,15 @@
 import CoverBackground from "@/components/ui/atoms/CoverBackground.vue";
 import Cover from "@/components/ui/molecules/Cover.vue";
 import Overally from "@/components/ui/atoms/Overally.vue";
+import DeltaDescription from "@/components/delta/DeltaDescription.vue";
 
 export default {
   layout: "default",
   components: {
     CoverBackground,
     Cover,
-    Overally
+    Overally,
+    DeltaDescription
   },
 };
 </script>

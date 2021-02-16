@@ -53,6 +53,20 @@ export default {
   width: 100%;
   display: flex;
   align-items: center;
+  color: variables.$title-blue;
+  background-color: transparent;
+
+
+     @media (max-width: 700px) {
+    
+      flex-direction: column;;
+      height: 100%;
+      
+
+      hr{
+        display: none;
+      }
+  }
 
   &__section {
     display: flex;
@@ -61,6 +75,12 @@ export default {
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 4rem;
+
+    @media (max-width: 800px) {
+    
+      flex-direction: column;;
+  padding: 1rem;
+  }
   }
 
   &__share {
@@ -75,6 +95,12 @@ export default {
     img{
       width: 30px;
     }
+
+      @media (max-width: 800px) {
+    
+      flex-direction: column;;
+  padding: 0rem;
+  }
   }
 
   hr {
@@ -83,7 +109,7 @@ export default {
 
   h6 {
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin: 1rem 0rem;
     color: variables.$black;
   }
 
@@ -92,6 +118,12 @@ export default {
     margin-bottom: 0.2rem;
     font-size: variables.$text-s;
     font-family: variables.$font-damily-alternative;
+  }
+
+  @media (max-width: 1000px) {
+  
+      padding: 0rem 3rem;
+    
   }
 }
 </style>
