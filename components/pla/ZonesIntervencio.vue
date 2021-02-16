@@ -1,8 +1,7 @@
 <template>
   <div class="zones-intervencio">
     <div class="zones-intervencio__item">
-      <div class="zones-intervencio__image__uno">
-      </div>
+      <div class="zones-intervencio__image__uno"></div>
       <div class="zones-intervencio__text">
         <h3>ZONES D'INTERVENCIÓ</h3>
         <p>
@@ -23,16 +22,15 @@
         </p>
         <p>
           D’aquesta manera s’han identificat 15 sectors diferents a la costa del
-          Delta i, per a cadascuna de les quals, s'han proposat les següents mesures:
+          Delta i, per a cadascuna de les quals, s'han proposat les següents
+          mesures:
         </p>
       </div>
     </div>
-    
   </div>
 </template>
 
 <script>
-
 export default {};
 </script>
 <style lang="scss" scoped>
@@ -52,31 +50,42 @@ export default {};
     margin: 2rem 0rem;
   }
 
-  &__text{
+  &__text {
     padding: 3rem;
     color: variables.$title-green;
     width: 50%;
     text-align: justify;
   }
 
-
-  &__image__uno{
+  &__image__uno {
     background-image: url("~static/img/conca.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
-  background-position-x: center;
-  width: 50%;
-  background-color: red;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    width: 50%;
+    background-color: red;
   }
 
-   &__image__dos{
-    background-image: url("~static/img/delta.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
-  background-position-x: center;
-  width: 50%;
+  @media (max-width: 1000px) {
+    &__item {
+      flex-direction: column;
+    }
+
+    &__text {
+      width: 100%;
+    }
+
+    &__image__uno {
+      height: 50%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h3 {
+      font-size: variables.$subtitle;
+    }
+    margin-bottom: 1rem;
   }
 }
 </style>

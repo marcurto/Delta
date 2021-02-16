@@ -127,13 +127,21 @@ export default {
   }
 
   @media (max-width: 800px) {
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
   flex-direction: column;
+  margin-bottom: 2rem;
 
     &__main{
           padding-left: 0rem;
           margin-top: 1.5rem;
 
+    }
+    &__image{
+              width: 70%;
+
+      img{
+        width: 100%;
+      }
     }
     }
 }

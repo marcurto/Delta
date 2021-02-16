@@ -26,5 +26,11 @@ export default {};
   h4{
     margin-bottom: 2rem;
   }
+
+   @media (max-width: 700px) {
+    padding: 0rem;
+margin-bottom: 2rem;
+   
+   }
 }
 </style>

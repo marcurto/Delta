@@ -31,8 +31,7 @@
           <img src="~static/img/perfil.png" />
         </div>
       </div> -->
-          <img src="~static/img/listaperfil.png" />
-
+      <img src="~static/img/listaperfil.png" />
     </div>
   </section>
 </template>
@@ -54,8 +53,7 @@ export default {
   height: 100%;
   width: 100%;
   display: flex;
-    margin-top: 3rem;
-
+  margin-top: 3rem;
 
   &__left {
     height: 100%;
@@ -64,8 +62,9 @@ export default {
     flex-direction: column;
     align-items: center;
 
-    &__text{
+    &__text {
       padding: 4rem;
+      text-align: justify;
     }
   }
 
@@ -74,16 +73,14 @@ export default {
     width: 60%;
     padding: 4rem 0rem;
 
-    img{
-      position: relative; 
-   }
-
+    img {
+      position: relative;
+    }
 
     &__list {
       background-color: variables.$title-green;
       width: 100%;
       padding: 4rem;
-
     }
 
     &__main {
@@ -97,9 +94,24 @@ export default {
       }
     }
 
-    &__image{
+    &__image {
       background-color: variables.$white;
       padding: 1rem;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+
+    &__left {
+      width: 100%;
+      &__text {
+        padding: 1rem;
+      }
+    }
+
+    &__right {
+      width: 100%;
     }
   }
 
@@ -109,6 +121,16 @@ export default {
 
   @media (max-width: 700px) {
     padding: 2rem;
+
+    &__right {
+      padding: 0rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h3 {
+      font-size: variables.$subtitle;
+    }
   }
 }
 </style>

@@ -66,5 +66,13 @@ export default {
       font-size: variables.$item;
     }
   }
+
+   @media (max-width: 500px) {
+    h3{
+      font-size: variables.$subtitle;
+    }
+
+   
+   }
 }
 </style>
