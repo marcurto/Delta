@@ -35,6 +35,9 @@ export default {
     showSidebar() {
       this.$data.sidebar = !this.$data.sidebar;
     },
+    move(route) {
+      this.$router.push(route);
+    },
   },
 };
 </script>

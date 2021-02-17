@@ -33,15 +33,21 @@
         la idea de que sí que és possible arribar a una petició consensuada per
         part del territori per a fer front a la problemàtica del Delta.
       </p>
+      <LogosAyuntamientos />
  
     </div>
+  
   </section>
 </template>
 
 <script>
+import LogosAyuntamientos from "@/components/ui/atoms/LogosAyuntamientos.vue";
+
 export default {
   layout: "default",
-  components: {},
+  components: {
+    LogosAyuntamientos
+  },
 };
 </script>
 
@@ -66,6 +72,7 @@ export default {
     width: 600px;
     position: absolute;
   }
+ 
 
   @media (max-width: 780px) {
     display: block;

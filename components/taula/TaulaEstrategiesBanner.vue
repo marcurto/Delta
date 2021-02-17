@@ -26,6 +26,5 @@ export default {
 @use "@/assets/style/index.scss";
 
 .estrategies {
-
 }
 </style>
