@@ -76,7 +76,18 @@ export default {
 
 
 
-  @media (max-width: 780px) {
+  @media (max-width: 800px) {
+
+    img{
+      height: 80px;
+    }
+  }
+    @media (max-width: 500px) {
+justify-content: center;
+    img{
+      height: 70px;
+      margin: 0.3rem;
+    }
   }
 }
 </style>

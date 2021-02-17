@@ -58,7 +58,7 @@ export default {
 
   @media (max-width: 780px) {
      display: block;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     &__blank {
       display: none;
     }
@@ -68,11 +68,15 @@ export default {
   }
 
   @media (max-width: 700px) {
-    padding: 2rem;
+    padding: 1rem;
   }
    @media (max-width: 500px) {
     h3{
       font-size: variables.$subtitle;
+    }
+
+    &__main{
+      padding: 1rem;
     }
 
    
