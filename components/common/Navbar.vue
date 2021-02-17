@@ -66,6 +66,11 @@ export default {
 
     p {
       margin-left: 1rem;
+
+      &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
 
     i {

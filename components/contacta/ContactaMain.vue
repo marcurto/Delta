@@ -4,11 +4,11 @@
       <div>
         <h6>EMAILS DE CONTACTE: </h6>
         <UiList>
-          <li>administracio@taulaconsens.cat</li>
-          <li >direcciotecnica@taulaconsens.cat</li>
-          <li>secretaria@taulaconsens.cat</li>
-          <li>portaveu@taulaconsens.cat</li>
-          <li>presidencia@taulaconsens.cat</li>
+          <li><a href="mailto:administracio@taulaconsens.cat">administracio@taulaconsens.cat</a></li>
+          <li ><a href="mailto:direcciotecnica@taulaconsens.cat">direcciotecnica@taulaconsens.cat</a></li>
+          <li><a href="mailto:secretaria@taulaconsens.cat">secretaria@taulaconsens.cat</a></li>
+          <li><a href="mailto:portaveu@taulaconsens.cat">portaveu@taulaconsens.cat</a></li>
+          <li><a href="mailto:presidencia@taulaconsens.cat">presidencia@taulaconsens.cat</a></li>
         </UiList>
       </div>
        <div>
@@ -75,6 +75,14 @@ export default {
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 4rem;
+
+    a{
+      color: variables.$title-blue;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
 
     @media (max-width: 800px) {
     
