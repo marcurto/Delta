@@ -5,6 +5,7 @@
         <CountdownCointainer />
       </Overally>
     </CoverBackground>
+    <FooterInici/>
     <!-- <Video />  -->
   </section>
 </template>
@@ -13,6 +14,7 @@
 import CountdownCointainer from "@/components/ui/molecules/CountdownContainer.vue";
 import CoverBackground from "@/components/ui/atoms/CoverBackground.vue";
 import Overally from "@/components/ui/atoms/Overally.vue";
+import FooterInici from "@/components/common/FooterInici.vue";
 // import Video from "@/components/ui/atoms/Video.vue";
 
 
@@ -22,6 +24,7 @@ export default {
     CountdownCointainer,
     CoverBackground,
     Overally,
+    FooterInici
     // Video
   },
 };

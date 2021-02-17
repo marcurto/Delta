@@ -29,9 +29,12 @@
         <img src="~static/img/facebook.png" />
         <img src="~static/img/whatsapp.png" />
         <img src="~static/img/007-linkedin-1.png" />
+      </div>
 
       </div>
-      </div>
+      <!-- <div class="contact__logo">
+        <img src="~static/img/logo.png" />
+      </div> -->
     </div>
   </section>
 </template>
@@ -56,16 +59,13 @@ export default {
   color: variables.$title-blue;
   background-color: transparent;
 
+  @media (max-width: 700px) {
+    flex-direction: column;
+    height: 100%;
 
-     @media (max-width: 700px) {
-    
-      flex-direction: column;;
-      height: 100%;
-      
-
-      hr{
-        display: none;
-      }
+    hr {
+      display: none;
+    }
   }
 
   &__section {
@@ -76,19 +76,18 @@ export default {
     align-items: flex-start;
     padding-top: 4rem;
 
-    a{
+    a {
       color: variables.$title-blue;
 
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
 
     @media (max-width: 800px) {
-    
-      flex-direction: column;;
-  padding: 1rem;
-  }
+      flex-direction: column;
+      padding: 1rem;
+    }
   }
 
   &__share {
@@ -100,15 +99,23 @@ export default {
     flex-direction: column;
     padding: 4rem;
 
-    img{
+    img {
       width: 30px;
     }
 
-      @media (max-width: 800px) {
-    
-      flex-direction: column;;
-  padding: 0rem;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      padding: 0rem;
+    }
   }
+
+  &__logo {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    img {
+      padding: 1rem;
+    }
   }
 
   hr {
@@ -129,9 +136,7 @@ export default {
   }
 
   @media (max-width: 1000px) {
-  
-      padding: 0rem 3rem;
-    
+    padding: 0rem 3rem;
   }
 }
 </style>

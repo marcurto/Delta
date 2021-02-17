@@ -2,6 +2,7 @@
   <div id="navigation-mobile">
     <UiList>
       <li><i class="fas fa-times" @click="callback()"></i></li>
+      <li @click="move('inici')">REGALA TEMPS</li>
       <li @click="move('taula')">La Taula de Consens</li>
       <li @click="move('pla')">El Pla Delta</li>
       <li @click="move('delta')">El Delta de l'Ebre</li>

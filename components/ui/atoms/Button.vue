@@ -1,18 +1,13 @@
 <template>
- <button type="submit">REGALA TEMPS</button>
+ <button type="submit">{{buttonText}}</button>
 </template>
 
 <script>
 export default {
   props: {
-    title: {
+    buttonText: {
       type: String,
-      default: "LES ESTRATÈGIES FONAMENTALS",
-    },
-    subtitle: {
-      type: String,
-      default:
-        "Com a conclusions de consens existent en cadascun dels aspectes tractats, podriem assenyalar els més importants i que haurien d’estar inclosos com a estratègies fonamentals de qualsevol Pla Integral de Protecció del Delta.",
+      default: "REGALA TEMPS",
     },
     theme: {
       type: String,

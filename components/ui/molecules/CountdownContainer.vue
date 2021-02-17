@@ -46,5 +46,18 @@ export default {
 
   }
 
+  @media (max-width: 800px) {
+      h3{
+        font-size: variables.$subtitle;
+      }
+  }
+  @media (max-width: 600px) {
+      h3{
+        text-align: center;
+        padding: 0rem 2.5rem;
+        margin-top: 2.5rem;
+      }
+  }
+
 }
 </style>

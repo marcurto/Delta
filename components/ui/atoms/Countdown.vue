@@ -52,6 +52,8 @@ export default {
   font-family: "Roboto Slab", serif;
   font-size: 6rem;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &__item {
     display: flex;
@@ -60,7 +62,7 @@ export default {
     justify-content: center;
     min-width: auto;
     width: 10rem;
-    margin: 0 0.7rem;
+    margin: 0.7rem;
     background-color: rgb(250, 250, 250, 0.3);
     color: rgb(41, 38, 38);
     padding: 0.7rem 0.5rem;
@@ -77,6 +79,43 @@ export default {
     font-size: variables.$subtitle;
     font-family: variables.$font-family;
     font-weight: 400;
+  }
+
+  @media (max-width: 1300px) {
+    &__item {
+      width: 8rem;
+    }
+    span {
+      font-size: variables.$title-l;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    &__item {
+      width: 7rem;
+    }
+    span {
+      font-size: variables.$title-m;
+    }
+  }
+
+  @media (max-width: 900px) {
+  
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+
+    &__item{
+
+      padding: 0.2rem;
+    }
+     span {
+      font-size: variables.$title-s;
+    }
+    p {
+      font-size: variables.$item;
+    }
   }
 }
 </style>

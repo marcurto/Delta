@@ -18,14 +18,21 @@
       de gener de 2020 amb la única finalitat de fer front a les possibles
       conseqüències que pot tenir la no actuació.
     </p>
+
+      <Button buttonText="Descarrega el document complet"/>
+    <!-- <button type="submit" id="buttonTaula" @click="()"><button/> -->
      </div>
   </section>
 </template>
 
 <script>
+    import Button from "@/components/ui/atoms/Button.vue";
+
 export default {
   layout: "default",
-  components: {},
+  components: {
+    Button
+  },
 };
 </script>
 
