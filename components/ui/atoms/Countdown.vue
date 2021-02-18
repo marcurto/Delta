@@ -1,33 +1,34 @@
 <template>
   <div class="countdown">
     <div class="countdown__item">
-      <span>25</span>
+      <span>{{years}}</span>
       <p>ANYS</p>
     </div>
     <div class="countdown__item">
-      <span>12</span>
+      <span>{{months}}</span>
       <p>MESOS</p>
     </div>
     <div class="countdown__item">
-      <span>23</span>
+      <span>{{days}}</span>
       <p>DIES</p>
     </div>
     <div class="countdown__item">
-      <span>23</span>
+      <span>{{hours}}</span>
       <p>HORES</p>
     </div>
     <div class="countdown__item">
-      <span>12</span>
+      <span>{{minutes}}</span>
       <p>MINUTS</p>
     </div>
     <div class="countdown__item">
-      <span>47</span>
+      <span>{{seconds}}</span>
       <p>SEGONS</p>
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
   props: {
     tag: {
@@ -42,7 +43,56 @@ export default {
         return themes.includes(value);
       },
     },
+    date: {
+      type: String
+    }
   },
+  
+  data() {
+    return {
+      now: Math.trunc((new Date()).getTime() / 1000)
+    }
+  },
+  created: function(){
+    setInterval(() => {
+        this.$data.now = Math.trunc((new Date()).getTime() / 1000);
+    }, 1000);
+  },
+  methods: {
+    two_digits(value){
+      if (value < 0) {
+        return '00';
+      }
+      if (value.toString().length <= 1) {
+        return `0${value}`;
+      }
+      return value;
+    },
+  },
+  computed: {
+    
+    dateInMilliseconds() {
+      return Math.trunc(Date.parse(this.$props.date) / 1000)
+    },
+    seconds() {
+      return this.two_digits((this.dateInMilliseconds - this.$data.now) % 60);
+    },
+    minutes() {
+      return this.two_digits(Math.trunc((this.dateInMilliseconds - this.$data.now) / 60) % 60);
+    },
+    hours() {
+      return this.two_digits(Math.trunc((this.dateInMilliseconds - this.$data.now) / 60 / 60) % 24);
+    },
+    days() {
+      return this.two_digits(Math.trunc((this.dateInMilliseconds - this.$data.now) / 60 / 60 / 24) % 30);
+    },
+    months() {
+      return this.two_digits(Math.trunc((this.dateInMilliseconds - this.$data.now) / 60 / 60 / 24 / 30) % 12);
+    },
+    years() {
+      return this.two_digits(Math.trunc((this.dateInMilliseconds - this.$data.now) / 60 / 60 / 24 / 365));
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

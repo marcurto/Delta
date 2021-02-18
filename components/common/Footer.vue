@@ -7,7 +7,10 @@
       <UiList theme="horizontal">
         <li>977 48 06 80 / 652 061 315</li>
         <li>|</li>
-        <a href="mailto:administracio@tauladeconsens.cat">administracio@tauladeconsens.cat<i class="fas fa-external-link-alt"></i
+        <a href="mailto:administracio@tauladeconsens.cat"
+          >administracio@tauladeconsens.cat<i
+            class="fas fa-external-link-alt"
+          ></i
         ></a>
       </UiList>
     </div>
@@ -31,7 +34,6 @@ export default {
 
 @import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
 
-
 .footer {
   display: flex;
   justify-content: space-between;
@@ -41,32 +43,32 @@ export default {
   background-color: variables.$title-blue;
   color: variables.$white;
   padding: 0.8rem 1.5rem;
-        font-size: variables.$text-xs;
+  font-size: variables.$text-xs;
 
-&__title{
-  display: flex;
-  align-items: center;
-  height: 100%;
+  &__title {
+    display: flex;
+    align-items: center;
+    height: 100%;
 
-  img{
-    width: 100px;
+    img {
+      width: 100px;
+    }
   }
-}
 
   p {
     margin: 0rem;
   }
 
-  i{
+  i {
     margin-left: 0.5rem;
     font-size: variables.$text-xs;
   }
 
-    @media (max-width: 700px) {
-       flex-direction: column;
-       &__contact{
-         font-size: 10px;
-       }
+  @media (max-width: 700px) {
+    flex-direction: column;
+    &__contact {
+      font-size: 10px;
     }
+  }
 }
 </style>

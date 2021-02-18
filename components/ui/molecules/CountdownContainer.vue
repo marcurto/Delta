@@ -4,7 +4,7 @@
     <h3>El Delta de l’Ebre pot desaparèixer en...</h3>
     </div>
         <div class="inicio__item">
-    <Countdown />
+    <Countdown date="2021-07-17 08:15:00"/>
         </div>
         <div class="inicio__item">
 
